@@ -66,16 +66,6 @@ even while a big folder is being zipped.
 5. **Compression levels 0-9** - higher = smaller file but slower.
    Text compresses great; videos/photos that are already compressed, not so much.
 
-## Exercises to level up (try these!)
-
-1. Add a "Delete original files after compressing" checkbox
-   (hint: `tk.BooleanVar` + `ttk.Checkbutton`).
-2. Show the biggest and smallest file found in the Results log.
-3. Add `.tar.gz` support with the `tarfile` module.
-4. ~~Package it as a double-clickable `.exe`~~ - done! See the packaging section below.
-5. Handle the edge case where the output `.zip` is saved *inside* a
-   folder being compressed (it would zip itself!).
-6. Handle duplicate filenames from different folders colliding in the zip.
 
 ## Package it as an .exe (runs without installing Python!)
 
